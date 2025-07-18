@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>WebCmd Giả Lập</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="terminal" id="terminal">
+    <div class="logo-area">
+<pre id="webcmd-logo">
+ __          __    _       _____                 _ 
+ \ \        / /   | |     / ____|               | |
+  \ \  /\  / /___ | |__  | |      _ __ ___    __| |
+   \ \/  \/ // _ \| '_ \ | |     | '_ ` _ \  / _` |
+    \  /\  /|  __/| |_) || |____ | | | | | || (_| |
+     \/  \/  \___||____/  \_____||_| |_| |_| \____|
+                                                   
+                                                   
+</pre>
+      <div class="logo-text" id="logo-name">HAIVLHOANGANH<br/>WebCmd</div>
+    </div>
+    <div id="output"></div>
+    <form id="name-form" autocomplete="off">
+      <span class="prompt">Nhập tên bạn: </span>
+      <input type="text" id="name-input" class="input-line" autofocus required maxlength="20">
+    </form>
+    <div id="cmd-area" style="display:none;">
+      <div id="cmd-list"></div>
+      <div id="cmd-line" class="cmd-line">
+        <span class="prompt" id="prompt-span"></span>
+        <span id="cmd-text" class="cmd-text" contenteditable="true" spellcheck="false"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  background: #000;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.terminal {
+  background: #111;
+  color: #00ff33;
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.18rem;
+  padding: 24px 28px;
+  border-radius: 8px;
+  min-width: 520px;
+  min-height: 400px;
+  box-shadow: 0 0 32px #000;
+  white-space: pre-wrap;
+  position: relative;
+}
+.logo-area {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+#webcmd-logo {
+  color: #00ff33;
+  margin: 0 14px 0 0;
+  font-size: 15px;
+  line-height: 1;
+}
+.logo-text {
+  margin-top: 4px;
+  color: #00ff33;
+  font-size: 13px;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.1;
+}
+#output {
+  min-height: 40px;
+}
+.prompt, .input-line {
+  color: #00ff33;
+  font-size: 1.19rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+.input-line {
+  background: transparent;
+  color: #00ff33;
+  border: none;
+  border-bottom: 1px solid #00ff33;
+  outline: none;
+  width: 160px;
+  font-size: 1.11rem;
+  margin-left: 5px;
+  font-family: inherit;
+}
+.input-line:focus {
+  background: #001800;
+}
+.cmd-history-line {
+  margin: 6px 0 0 3px;
+  display: block;
+  white-space: pre-wrap;
+}
+#cmd-list {
+  margin-top: 14px;
+}
+.cmd-line {
+  margin-left: 3px;
+  min-height: 1.25em;
+  font-size: 1.18rem;
+  font-family: inherit;
+  color: #00ff33;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: text;
+}
+#cmd-text {
+  outline: none;
+  min-width: 7px;
+  flex: 1;
+  color: #00ff33;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  caret-color: #00ff33;
+  padding: 0;
+  margin: 0;
+  margin-left: 4px;
+  border: none;
+}
+#cmd-text:empty:before {
+  content: '';
+  color: #00ff33;
+}
